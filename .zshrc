@@ -86,8 +86,16 @@ source $ZSH/oh-my-zsh.sh
 #
 copyConfigs = function () {
 	cp ~/.vimrc ~/configs/.vimrc
-       	cp ~/.bashrc ~/configs/.bashrc
+ 	cp ~/.bashrc ~/configs/.bashrc
 	cp ~/.zshrc ~/configs/.zshrc	
 }
 
+pushConfigs = function () {
+	cd ~/configs
+	git add ~/configs/.vimrc ~/configs/.bashrc ~/configs/.zshrc
+	git commit -m 'Updating Configs'
+	git push origin master
+}
+
 alias copyConfigs="copyConfigs"
+alias pushConfigs="pushConfigs"
