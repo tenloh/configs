@@ -1,3 +1,4 @@
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
@@ -29,3 +30,14 @@ set laststatus=2
 " Nerd Tree toggle on Ctrl + n
 map <C-n> :NERDTreeToggle<CR>
 
+" Ctrl - P Starting Directory
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+
+" Defaults
+set autoindent
+set tabstop=2
+set wrap linebreak textwidth=0
+set foldmethod=indent
+set cmdheight=2
+set clipboard=unnamed

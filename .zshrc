@@ -83,3 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+copyConfigs = function () {
+	cp ~/.vimrc ~/configs/.vimrc
+       	cp ~/.bashrc ~/configs/.bashrc
+	cp ~/.zshrc ~/configs/.zshrc	
+}
+
+alias copyConfigs="copyConfigs"
