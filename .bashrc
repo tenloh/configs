@@ -1,0 +1,2 @@
+#auto to zsh
+zsh
