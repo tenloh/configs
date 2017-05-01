@@ -19,6 +19,9 @@ Plug 'scrooloose/nerdtree'
 " Ctrl-P
 Plug 'kien/ctrlp.vim'
 
+" Vim-Fugitive (Gblame)
+Plug 'tpope/vim-fugitive'
+
 " Initialize plugin system
 call plug#end()
 
