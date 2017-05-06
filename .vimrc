@@ -22,6 +22,9 @@ Plug 'kien/ctrlp.vim'
 " Vim-Fugitive (Gblame)
 Plug 'tpope/vim-fugitive'
 
+" Vim-Go 
+Plug 'fatih/vim-go'
+
 " Initialize plugin system
 call plug#end()
 
