@@ -88,6 +88,7 @@ copyConfigs = function () {
 	cp ~/.vimrc ~/configs/.vimrc
  	cp ~/.bashrc ~/configs/.bashrc
 	cp ~/.zshrc ~/configs/.zshrc	
+	cp ~/.vim/.editorconfig ~/configs/.vim/.editorconfig	
 }
 
 pushConfigs = function () {
