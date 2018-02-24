@@ -96,6 +96,7 @@ pushConfigs = function () {
 	git add ~/configs/.vimrc ~/configs/.bashrc ~/configs/.zshrc
 	git commit -m 'Updating Configs'
 	git push origin master
+	cd -
 }
 
 alias copyConfigs="copyConfigs"
