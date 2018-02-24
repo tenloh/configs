@@ -25,6 +25,9 @@ Plug 'tpope/vim-fugitive'
 " Vim-Go 
 Plug 'fatih/vim-go'
 
+" Vim-Jsbeautify - Prettify JS Files
+Plug 'maksimr/vim-jsbeautify'
+
 " Initialize plugin system
 call plug#end()
 
@@ -32,6 +35,8 @@ colorscheme pablo
 
 " Vim-Airline To Show Up On Single Buffers
 set laststatus=2
+set number
+set relativenumber
 
 " Nerd Tree toggle on Ctrl + n
 map <C-n> :NERDTreeToggle<CR>
@@ -47,3 +52,8 @@ set wrap linebreak textwidth=0
 set foldmethod=indent
 set cmdheight=2
 set clipboard=unnamed
+
+inoremap jj <ESC>
+
+".vimrc
+map <c-f> :call JsBeautify()<cr>

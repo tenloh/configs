@@ -100,34 +100,6 @@ pushConfigs = function () {
 alias copyConfigs="copyConfigs"
 alias pushConfigs="pushConfigs"
 
-# git checkout script
+export PGHOST=localhost
 
-start = function () {
-				newbranch=$1
-
-				trap 'abort' 0
-
-				#step 1 - stash your current work
-				git stash
-
-				#step 2 - checkout to master
-				git checkout master
-
-				#step 3 - pull in master
-				git pull origin master
-
-				#step 4- create new branch
-				if (git checkout -b $newbranch); then
-				else
-								(git checkout $newbranch)
-								echo $(git stash list)
-								echo='Please choose a stash to apply'
-								read num
-
-								git stash apply stash@{$num}
-				fi
-				
-
-				trap 0:
-				
-}
+alias rm="rm -i"
