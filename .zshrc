@@ -9,6 +9,9 @@ export ZSH=/Users/tenloh/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="random"
 
+# Get rid of this stupid battery issue
+plugins=(git battery)
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -89,11 +92,12 @@ copyConfigs = function () {
  	cp ~/.bashrc ~/configs/.bashrc
 	cp ~/.zshrc ~/configs/.zshrc	
 	cp ~/.vim/.editorconfig ~/configs/.vim/.editorconfig	
+	cp ~/.tmux.conf ~/configs/.tmux.config
 }
 
 pushConfigs = function () {
 	cd ~/configs
-	git add ~/configs/.vimrc ~/configs/.bashrc ~/configs/.zshrc
+	git add .
 	git commit -m 'Updating Configs'
 	git push origin master
 	cd -
