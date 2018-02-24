@@ -56,4 +56,4 @@ set clipboard=unnamed
 inoremap jj <ESC>
 
 ".vimrc
-map <c-f> :call JsBeautify()<cr>
+map <c-m> :call JsBeautify()<cr>
